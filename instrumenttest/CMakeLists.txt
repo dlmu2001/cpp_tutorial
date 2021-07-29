@@ -15,7 +15,7 @@ MESSAGE(STATUS "CMAKE_C_FLAGS_RELEASE= " ${CMAKE_C_FLAGS_RELEASE})
 MESSAGE(STATUS "CMAKE_CXX_FLAGS_DEBUG= " ${CMAKE_CXX_FLAGS_DEBUG})
 MESSAGE(STATUS "CMAKE_CXX_FLAGS_RELEASE= " ${CMAKE_CXX_FLAGS_RELEASE})
 SET(CMAKE_C_FLAGS "${CMAKE_C_FLAGS}  ${WARNINGS} ${C_WARNINGS} -funroll-loops -fPIC -fsigned-char -funwind-tables -fexceptions -pthread" )
-set(CMAKE_C_FLAGS_DEBUG "${CMAKE_C_FLAGS_DEBUG} -O0 -pipe")
+set(CMAKE_C_FLAGS_DEBUG "${CMAKE_C_FLAGS_DEBUG} -O0 -pipe  -finstrument-functions")
 
 set(CMAKE_CXX_STANDARD 14)
 SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS}  ${WARNINGS} ${CXX_WARNINGS}  -funroll-loops -fPIC -fsigned-char -funwind-tables -fexceptions -fpermissive -pthread" )

@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.5)
 set(CMAKE_TOOLCHAIN_FILE ./toolchain.cmake)
-PROJECT(hello)
+PROJECT(sequence_container_demo)
 
 add_compile_options(-Wno-unused-variable -Wno-unused-parameter
 -Wall -Wextra -Wpointer-arith -Wvla -Wwrite-strings -Wno-error=extra -Wno-error=unused-function
